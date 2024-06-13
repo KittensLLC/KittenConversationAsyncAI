@@ -10,7 +10,7 @@ As a research company, you may be interested in extracting material properties o
 <br>
 <br>
 
-Combining Azure Cognitive Search with Azure OpenAI is a simple and effective way to get personalized experiences without training complex Machine Learning models for entity extracting and search enrichment. 
+Combining Azure Cognitive Search with Azure OpenAI is a simple and effective way to get personalized experiences without training complex Machine Learning models for entity extracting and search enrichment.
 
 ## Architecture
 ![Architecture](docs/architecture.png)
