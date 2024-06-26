@@ -57,8 +57,9 @@ def get_openai_completion(text, prompt = ''):
 @retry(wait=wait_random_exponential(min=1, max=20), stop=stop_after_attempt(6))
 def get_openai_chat_completion(text, prompt = ''):
     prompt = PROMPT if prompt == '' else prompt
+    # Removed engine="gpt-35-turbo", should not be hard coded - BUG
     response = openai.ChatCompletion.create(
-            engine="gpt-35-turbo",
+            engine=MODEL,
             messages = [
                 {"role":"system","content": prompt},
                 {"role":"user","content":text}],
